@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temp</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Temp</h1>
+	 <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="text" name="image" value="Upload">
+      <input type="submit" value="Predict">
+	{% if label %} {{ label }} {% endif %}
+
+</body>
+</html>
